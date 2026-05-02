@@ -13,7 +13,6 @@ import requests
 from io import BytesIO
 import time
 import threading
-import winsound
 import platform
 
 # Configure Streamlit page
