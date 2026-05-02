@@ -14,6 +14,7 @@ from io import BytesIO
 import time
 import threading
 import platform
+import sys
 
 # Configure Streamlit page
 st.set_page_config(
@@ -41,6 +42,7 @@ def play_alert_sound():
     """Play alert sound when trash is detected"""
     try:
         if platform.system() == "Windows":
+            import winsound
             winsound.Beep(1000, 500)  # frequency 1000Hz, duration 500ms
         else:
             # On Mac/Linux, use system beep
