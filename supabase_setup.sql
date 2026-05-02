@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS detections (
 );
 
 -- Create index on timestamp for faster queries
-CREATE INDEX IF NOT EXISTS detections_timestamp_idx ON detections(timestamp DESC);
+CREATE INDEX IF NOT EXISTS detections_timestamp_idx 
+ON detections (timestamp DESC);
 
 -- Test query
 SELECT 'Setup complete!' AS message;
