@@ -544,3 +544,8 @@ create policy "allow all" on detections for all using (true) with check (true);
 alter table detections enable row level security;
 ```
 """)
+
+
+
+
+
